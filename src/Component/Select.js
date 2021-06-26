@@ -3,11 +3,11 @@ import Options from './Options'
 
 class Select extends Component {
     render() {
-        const { name } = this.props
+        const { name, onChange } = this.props
         return (
             <div>
-                <label className="label">{name}</label>
-                <select className="field">
+                <label className="label">{ name }</label>
+                <select name={ name } onChange={ onChange } className="field">
                     <Options />
                 </select>
             </div>

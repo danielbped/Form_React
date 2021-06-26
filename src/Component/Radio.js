@@ -2,10 +2,12 @@ import React, { Component } from "react";
 
 class Radio extends Component {
     render () {
+        const { name, onChange } = this.props;
         return (
-            <div>
-                <input type="radio" name="residence" value="casa" />Casa
-                <input type="radio" name="residence" value="apartamento" />Apartamento
+            <div onChange={onChange}>
+                <label className="label">{ name }</label>
+                <input type="radio" name="Residencia" value="Casa" />Casa
+                <input type="radio" name="Residencia" value="Apartamento" />Apartamento
             </div>
         )
     }

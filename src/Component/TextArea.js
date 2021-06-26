@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 class TextArea extends Component {
     render() {
-        const { name, maxLength, onMouseEnter } = this.props;
+        const { name, maxLength, onMouseEnter, onChange } = this.props;
         const rows = maxLength/100;
         return (
             <div>
                 <label className="label">{name}</label>
-                <textarea className ="textarea" rows={rows} maxLength={maxLength} onMouseEnter={onMouseEnter} required />
+                <textarea name = { name } onChange={ onChange } className ="textarea" rows={rows} maxLength={maxLength} onMouseEnter={onMouseEnter} required />
             </div>
         )
     }

@@ -13,6 +13,7 @@ class Input extends Component {
                 onChange={onChange} 
                 maxLength={maxLength} 
                 type={type} 
+                name = {name}
                 required 
             />
             </div>
