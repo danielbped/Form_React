@@ -1,0 +1,21 @@
+.input {
+    width: 80%;
+}
+
+.fieldset {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.textarea {
+    width: 100%;
+    resize: none;
+}
